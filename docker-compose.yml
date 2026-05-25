@@ -1,0 +1,43 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: leaf
+      POSTGRES_PASSWORD: leaf
+      POSTGRES_DB: leaf
+    ports:
+      - "5433:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  api:
+    build:
+      context: .
+      dockerfile: artifacts/api-server/Dockerfile
+    env_file:
+      - ../.env
+    environment:
+      DATABASE_URL: "postgres://leaf:leaf@db:5432/leaf"
+      PORT: 3000
+    depends_on:
+      - db
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: .
+      dockerfile: artifacts/leafline/Dockerfile
+    environment:
+      VITE_API_BASE_URL: "http://localhost:3000"
+    ports:
+      - "5173:80"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+volumes:
+  db-data:

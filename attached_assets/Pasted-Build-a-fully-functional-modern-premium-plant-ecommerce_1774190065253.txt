@@ -1,0 +1,375 @@
+Build a **fully functional modern premium plant ecommerce platform** called **LEAFLINE**, inspired by high-quality interactive portfolio websites like dipram.in and Apple-style landing pages.
+
+IMPORTANT:
+This must be a **complete working website**, not just a landing page UI.
+All buttons, navigation, filtering, cart actions, and checkout flow must function realistically.
+
+Tech Stack Required:
+
+Frontend:
+Next.js (App Router)
+React
+Tailwind CSS
+Framer Motion animations
+Lenis smooth scrolling
+Barba.js page transitions
+next-themes dark/light mode
+
+Backend:
+Node.js
+Express.js OR Next.js Server Actions
+MongoDB database
+
+State Management:
+Zustand or Context API
+
+Authentication:
+Email login/signup system (JWT-based)
+
+Deployment-ready architecture.
+
+---
+
+CORE WEBSITE STRUCTURE
+
+Pages required:
+
+Homepage
+Shop page
+Plant detail page
+Cart page
+Checkout page
+Donation page
+Certificate page
+AI Plant Assistant page
+User Dashboard
+Order History page
+Admin dashboard (basic)
+
+---
+
+HOMEPAGE REQUIREMENTS
+
+Cinematic hero section
+
+Large typography
+
+Framer Motion entrance animation
+
+Lenis smooth scroll
+
+Apple-style spacing
+
+Navbar behavior:
+
+transparent initially
+blur after scroll
+active section highlight animation
+
+Sections:
+
+Featured Plants
+Categories
+Why Choose Us
+Customer Reviews
+Donation CTA section
+AI Assistant CTA section
+Newsletter signup
+Footer
+
+---
+
+PLANT DATABASE REQUIREMENT
+
+Create at least **50 different plant entries**
+
+Each plant must contain:
+
+name
+price
+difficulty level
+light requirement
+watering frequency
+pet safe or not
+air purification rating
+indoor/outdoor compatibility
+image
+description
+care instructions
+recommended placement
+growth speed
+humidity requirement
+
+Store in MongoDB.
+
+---
+
+SMART FILTERING SYSTEM (UNIQUE FEATURE)
+
+Build intelligent filtering UI where users can select:
+
+beginner friendly plants
+low maintenance plants
+pet safe plants
+low light plants
+air purifier plants
+bedroom plants
+office plants
+balcony plants
+
+Display dynamic suggestions:
+
+“Best plants for your home”
+
+based on selected filters.
+
+Filtering must work instantly without reload.
+
+---
+
+DONATE A PLANT FEATURE (UNIQUE CORE FEATURE)
+
+Add button:
+
+Donate a Plant 🌱
+
+Flow:
+
+User selects plant to donate
+
+Chooses donation location
+
+Completes donation checkout
+
+System generates:
+
+PDF donation certificate
+
+Certificate includes:
+
+user name
+plant donated
+date
+certificate ID
+organization name
+
+Certificate downloadable after donation.
+
+Also allow donation option inside checkout page.
+
+---
+
+AI PLANT CARE ASSISTANT FEATURE
+
+Add chatbot:
+
+Leafline AI Assistant 🌿
+
+Capabilities:
+
+Plant care guidance
+
+Watering reminders
+
+Disease diagnosis suggestions
+
+Placement advice
+
+Fertilizer recommendations
+
+Seasonal care tips
+
+Implementation:
+
+Use OpenAI API
+
+Include prompt engineering system like:
+
+“You are a professional plant care assistant helping users maintain healthy indoor plants.”
+
+Chat UI must look modern like ChatGPT sidebar assistant.
+
+---
+
+SHOP PAGE REQUIREMENTS
+
+Grid layout
+
+Animated product cards
+
+Hover zoom effect
+
+Shadow lift animation
+
+Smooth Add-to-Cart animation
+
+Wishlist feature
+
+Sorting:
+
+price low-high
+price high-low
+difficulty level
+popularity
+
+---
+
+CART SYSTEM (FULLY FUNCTIONAL)
+
+Add to cart
+
+Remove item
+
+Quantity update
+
+Live price update
+
+Cart drawer animation
+
+Persistent cart storage
+
+---
+
+CHECKOUT SYSTEM
+
+User info form
+
+Address form
+
+Payment option selector UI
+
+Donation add-on checkbox
+
+Order confirmation screen
+
+Certificate generation if donation selected
+
+---
+
+USER DASHBOARD
+
+Profile info
+
+Saved plants
+
+Wishlist
+
+Order history
+
+Donation history
+
+Download certificates
+
+---
+
+ADMIN PANEL (BASIC)
+
+Add plant
+
+Remove plant
+
+Edit plant details
+
+View orders
+
+View donations
+
+---
+
+ANIMATIONS REQUIREMENTS
+
+Use Framer Motion for:
+
+section reveal animations
+
+card hover animations
+
+navbar transitions
+
+button micro-interactions
+
+Use Lenis for:
+
+smooth scrolling
+
+Use Barba.js for:
+
+page transitions
+
+Animations must feel premium:
+
+slow
+
+cinematic
+
+minimal
+
+professional
+
+---
+
+DESIGN SYSTEM
+
+Font:
+
+Inter
+
+Spacing:
+
+max-w-7xl layout
+
+px-6 horizontal spacing
+
+py-32 section spacing
+
+Colors:
+
+white
+
+neutral-900
+
+emerald-600 accent
+
+Typography hierarchy:
+
+Hero heading:
+
+text-8xl
+
+Section heading:
+
+text-5xl
+
+Body text:
+
+text-neutral-500
+
+Rounded corners:
+
+rounded-3xl
+
+Soft shadows only
+
+---
+
+FINAL REQUIREMENT
+
+This must behave like a **real production-ready ecommerce platform**, not a static UI mockup.
+
+All buttons must function
+
+Cart must work
+
+Filtering must work
+
+Donation certificate must generate
+
+AI assistant must respond
+
+MongoDB must store plant data
+
+User authentication must work
+
+Website must be responsive
+
+mobile tablet desktop support required
